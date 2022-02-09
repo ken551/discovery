@@ -2,18 +2,32 @@
 
 # 必要な知識とハードウェア環境
 
+<!--
 The primary knowledge requirement to read this book is to know *some* Rust. It's
 hard for me to quantify *some* but at least I can tell you that you don't need
 to fully grok generics, but you do need to know how to *use* closures. You also
 need to be familiar with the idioms of the [2018 edition], in particular with
 the fact that `extern crate` is not necessary in the 2018 edition.
+-->
+
+この本を読むために主に必要な知識は、*ある程度の*Rustに関する知識です。
+*ある程度の*が具体的にどの程度かと聞かれれば難しいところですが、ジェネリクスを完全に理解している必要はないにしろ、クロージャをどうやって*使う*かは知っているべきといったところでしょうか。
+[2018 edition]のイディオムにも慣れていた方がよいでしょう。
+特に、2018 editionでは`extern crate`を使わなくてもいいということは理解しておいてほしいです。
+
 
 [2018 edition]: https://rust-lang-nursery.github.io/edition-guide/
 
-Also, to follow this material you'll need the following hardware:
+<!-- Also, to follow this material you'll need the following hardware: -->
 
+それと、この本の内容を実践するにあたり、以下のハードウェアが必要です。
+
+<!--
 - A [micro:bit v2] board, alternatively a [micro:bit v1.5] board, the book
   will refer to the v1.5 as just v1.
+-->
+
+- [micro:bit v2]ボードが一つ。代わりに[micro:bit v1.5]ボードでも大丈夫です。この本の中では、v1.5をv1と表記します。
 
 [micro:bit v2]: https://tech.microbit.org/hardware/
 [micro:bit v1.5]: https://tech.microbit.org/hardware/1-5-revision/
@@ -27,27 +41,50 @@ Also, to follow this material you'll need the following hardware:
 <img title="micro:bit" src="../assets/microbit-v2.jpg">
 </p>
 
-> **NOTE** This is an image of a micro:bit v2, the front of the v1 looks slightly different
+<!-- > **NOTE** This is an image of a micro:bit v2, the front of the v1 looks slightly different -->
 
-- One micro-B USB cable, required to make the micro:bit board work.
+> **注意** 写真はmicro:bit v2のものです。v1の前面はちょっと違う見た目をしています。
+
+<!-- - One micro-B USB cable, required to make the micro:bit board work.
   Make sure that the cable supports data transfer as some cables only support charging devices.
+  -->
+
+- micro-BのUSBケーブルが一本、micro:bitを動かすために必要です。充電しかできないものもあるので、データ転送に対応したケーブルであることを確認してください。
 
 <p align="center">
 <img title="micro-B USB cable" src="../assets/usb-cable.jpg">
 </p>
 
+<!--
 > **NOTE** You may already have a cable like this, as some micro:bit kits ship with such cables.
 > Some USB cables used to charge mobile devices may also work, if they are micro-B and have the
 > capability to transmit data.
+-->
 
+> **注意** ケーブルはmicro:bitのキットに同梱されている場合もあります。
+> モバイル機器の充電に使っているようなmicro-Bのケーブルでも、実はデータ転送に対応していて使うことができるという場合もあります。
+
+<!--
 > **FAQ**: Wait, why do I need this specific hardware?
+-->
+
+> **FAQ**: ちょっと待ってください。なぜこのボードが必要なのでしょうか？
 
 It makes my life and yours much easier.
 
+<!--
 The material is much, much more approachable if we don't have to worry about hardware differences.
 Trust me on this one.
+-->
 
+ハードウェアの違いを気にしなくていいのであれば、この本はとても、とても取り組みやすくなります。
+間違いなく、です。
+
+<!--
 > **FAQ**: Can I follow this material with a different development board?
+-->
+
+> **FAQ**: 別の開発ボードを使ってこの本の内容に取り組んでも問題ないでしょうか？
 
 Maybe? It depends mainly on two things: your previous experience with microcontrollers and/or
 whether a high level crate already exists, like the [`nrf52-hal`], for your development board
