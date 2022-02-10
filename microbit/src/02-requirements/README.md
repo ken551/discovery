@@ -86,18 +86,26 @@ Trust me on this one.
 
 > **FAQ**: 別の開発ボードを使ってこの本の内容に取り組んでも問題ないでしょうか？
 
-Maybe? It depends mainly on two things: your previous experience with microcontrollers and/or
+<!--Maybe? It depends mainly on two things: your previous experience with microcontrollers and/or
 whether a high level crate already exists, like the [`nrf52-hal`], for your development board
 somewhere. You can look through the [Awesome Embedded Rust HAL list] for your microcontroller,
-if you intend to use a different one.
+if you intend to use a different one.-->
+
+おそらく問題ないはず？です。
+あなたがマイクロコントローラをこれまでにどれだけ触ったことがあるか、あるいは（および）、あなたが使おうとしている開発ボードに、[`nrf52-hal`]のような高レベルなクレートがすでにあるか次第だと言えるかもしれません。。
+もし違うマイクロコントローラを使おうとしているのであれば、 [Awesome Embedded Rust HAL list]でそのようなクレートを探してみるのもいいでしょう。
 
 [`nrf52-hal`]: https://docs.rs/nrf52-hal
 [Awesome Embedded Rust]: https://github.com/rust-embedded/awesome-embedded-rust#hal-implementation-crates
 
-With a different development board, this text would lose most if not all its beginner friendliness
-and "easy to follow"-ness, IMO.
+<!--With a different development board, this text would lose most if not all its beginner friendliness
+and "easy to follow"-ness, IMO.-->
 
-If you have a different development board and you don't consider yourself a total beginner, you are
-better off starting with the [quickstart] project template.
+もし違う開発ボードを使うならば、この本は初心者にやさしくも、取り組みやすくもなくなってしまうんではないか、と私は思います。
+
+<!--If you have a different development board and you don't consider yourself a total beginner, you are
+better off starting with the [quickstart] project template.-->
+
+もし違う開発ボードを使おうとしていて、かつ全くの初心者ではないという自信があるのであれば、[quickstart]プロジェクトのテンプレートに従って始めるほうがいいでしょう。
 
 [quickstart]: https://rust-embedded.github.io/cortex-m-quickstart/cortex_m_quickstart/
