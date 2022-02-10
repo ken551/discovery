@@ -10,8 +10,9 @@ need to be familiar with the idioms of the [2018 edition], in particular with
 the fact that `extern crate` is not necessary in the 2018 edition.
 -->
 
-この本を読むために主に必要な知識は、*ある程度の*Rustに関する知識です。
-*ある程度の*が具体的にどの程度かと聞かれれば難しいところですが、ジェネリクスを完全に理解している必要はないにしろ、クロージャをどうやって*使う*かは知っているべきといったところでしょうか。
+この本を読むために主に必要な知識は、 *ある程度の*Rustに関する知識です。
+*ある程度の*が具体的にどの程度かと聞かれれば難しいところですね。
+ジェネリクスを完全に理解している必要はないにしろ、クロージャをどうやって*使う*かは知っているべきといったところでしょうか。
 [2018 edition]のイディオムにも慣れていた方がよいでしょう。
 特に、2018 editionでは`extern crate`を使わなくてもいいということは理解しておいてほしいです。
 
@@ -32,7 +33,9 @@ the fact that `extern crate` is not necessary in the 2018 edition.
 [micro:bit v2]: https://tech.microbit.org/hardware/
 [micro:bit v1.5]: https://tech.microbit.org/hardware/1-5-revision/
 
-(You can purchase this board from several [electronics][0] [suppliers][1])
+<!--(You can purchase this board from several [electronics][0] [suppliers][1])---->
+
+([ここ][0]や[ここ][1]など、いくつかの電子部品販売店から購入可能です。)
 
 [0]: https://microbit.org/buy/
 [1]: https://www.mouser.com/microbit/_/N-aez3t?P=1y8um0l
@@ -68,9 +71,11 @@ the fact that `extern crate` is not necessary in the 2018 edition.
 > **FAQ**: Wait, why do I need this specific hardware?
 -->
 
-> **FAQ**: ちょっと待ってください。なぜこのボードが必要なのでしょうか？
+> **FAQ**: ちょっと待ってください。なぜこの特定のハードウェアが必要なのでしょうか？
 
-It makes my life and yours much easier.
+<!-- It makes my life and yours much easier. -->
+
+その方が私にとっても、あなたにとっても非常に楽だからです。
 
 <!--
 The material is much, much more approachable if we don't have to worry about hardware differences.
