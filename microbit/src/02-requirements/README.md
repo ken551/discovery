@@ -97,7 +97,7 @@ somewhere. You can look through the [Awesome Embedded Rust HAL list] for your mi
 if you intend to use a different one.-->
 
 おそらく問題ないはず？です。
-あなたがマイクロコントローラをこれまでにどれだけ触ったことがあるか、あるいは（および）、あなたが使おうとしている開発ボードに、[`nrf52-hal`]のような高レベルなクレートがすでにあるか次第だと言えるかもしれません。。
+あなたがマイクロコントローラをこれまでにどれだけ触ったことがあるか、あるいは（および）、あなたが使おうとしている開発ボードに、[`nrf52-hal`]のような高レベルなクレートがすでにあるか次第だと言えるかもしれません。
 もし違うマイクロコントローラを使おうとしているのであれば、 [Awesome Embedded Rust HAL list]でそのようなクレートを探してみるのもいいでしょう。
 
 [`nrf52-hal`]: https://docs.rs/nrf52-hal
