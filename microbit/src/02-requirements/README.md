@@ -10,7 +10,7 @@ need to be familiar with the idioms of the [2018 edition], in particular with
 the fact that `extern crate` is not necessary in the 2018 edition.
 -->
 
-この本を読むために主に必要な知識は、 *ある程度の*Rustに関する知識です。
+この本を読むために必要な知識は、 *ある程度の*Rustに関する知識です。
 *ある程度の*が具体的にどの程度かと聞かれれば難しいところですね。
 ジェネリクスを完全に理解している必要はないにしろ、クロージャをどうやって*使う*かは知っているべきといったところでしょうか。
 [2018 edition]のイディオムにも慣れていた方がよいでしょう。
