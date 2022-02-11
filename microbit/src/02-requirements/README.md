@@ -35,10 +35,12 @@ the fact that `extern crate` is not necessary in the 2018 edition.
 
 <!--(You can purchase this board from several [electronics][0] [suppliers][1])---->
 
-([ここ][0]や[ここ][1]など、いくつかの電子部品販売店から購入可能です。)
+([ここ][0]や[ここ][1]など（訳注：あと、日本だと[ここ][2]や[ここ][3]なんかも）、いくつかの電子部品販売店から購入可能です。)
 
 [0]: https://microbit.org/buy/
 [1]: https://www.mouser.com/microbit/_/N-aez3t?P=1y8um0l
+[2]: https://akizukidenshi.com/catalog/g/gM-15882/
+[3]: https://www.switch-science.com/catalog/6600/
 
 <p align="center">
 <img title="micro:bit" src="../assets/microbit-v2.jpg">
