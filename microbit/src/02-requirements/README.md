@@ -35,7 +35,8 @@ the fact that `extern crate` is not necessary in the 2018 edition.
 
 <!--(You can purchase this board from several [electronics][0] [suppliers][1])---->
 
-([ここ][0]や[ここ][1]など（訳注：あと、日本だと[ここ][2]や[ここ][3]なんかも）、いくつかの電子部品販売店から購入可能です。)
+([ここ][0]や[ここ][1]など、いくつかの電子部品販売店から購入可能です。)
+> 訳注：日本だと[秋月電子通商][2]や[スイッチサイエンス][3]から購入可能です。
 
 [0]: https://microbit.org/buy/
 [1]: https://www.mouser.com/microbit/_/N-aez3t?P=1y8um0l
@@ -108,7 +109,7 @@ if you intend to use a different one.-->
 <!--With a different development board, this text would lose most if not all its beginner friendliness
 and "easy to follow"-ness, IMO.-->
 
-もし違う開発ボードを使うならば、この本は初心者にやさしくも、取り組みやすくもなくなってしまうんではないか、と私は思います。
+違う開発ボードを使う場合、この本の持つ、初心者にとっての取り組みやすさが損なわれてしまう、と私は思います
 
 <!--If you have a different development board and you don't consider yourself a total beginner, you are
 better off starting with the [quickstart] project template.-->
