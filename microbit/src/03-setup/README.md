@@ -2,31 +2,57 @@
 
 # 開発環境のセットアップ
 
-Dealing with microcontrollers involves several tools as we'll be dealing with an architecture
-different from your computer's and we'll have to run and debug programs on a "remote" device.
+<!--Dealing with microcontrollers involves several tools as we'll be dealing with an architecture
+different from your computer's and we'll have to run and debug programs on a "remote" device.-->
 
-## Documentation
+マイクロコントローラを扱うためには、幾つかのツールを導入せねばなりません。
+なぜなら、あなたが使っているそのコンピュータとは異なったアーキテクチャを相手にすることになるからです。
+また、デバッグ用のプログラムを「リモート」の機器として実行する必要があるからです。
 
-Tooling is not everything though. Without documentation, it is pretty much impossible to work with
-microcontrollers.
+<!--## Documentation-->
 
-We'll be referring to all these documents throughout this book:
+## ドキュメント
+
+<!-- Tooling is not everything though. Without documentation, it is pretty much impossible to work with
+microcontrollers.-->
+
+もっとも、ツールだけでは不十分です。
+ドキュメントなくして、マイクロコントローラを触ることは到底できないなのです。
+
+<!--We'll be referring to all these documents throughout this book:-->
+
+この本では、全体を通して以下のドキュメントを参照します。
 
 - [LSM303AGR]
 
 [LSM303AGR]: https://www.st.com/resource/en/datasheet/lsm303agr.pdf
 
-## Tools
+<!-- ## Tools -->
 
-We'll use all the tools listed below. Where a minimum version is not specified, any recent version
-should work but we have listed the version we have tested.
+## ツール
 
-- Rust 1.53.0 or a newer toolchain.
+<!-- We'll use all the tools listed below. Where a minimum version is not specified, any recent version
+should work but we have listed the version we have tested. -->
 
-- `gdb-multiarch`. Tested version: 10.2. Other versions will most likely work as well though
+以下に挙げるツールすべてを使います。
+バージョンの最低要件を記載していないものに関しては、最新版であれば正常に動くはずです。
+ですがここでは、動作確認をしたバージョンを併せて記載しました。
+
+<!-- - Rust 1.53.0 or a newer toolchain.-->
+
+- Rust toolchain 1.53.0以上
+
+<!-- - `gdb-multiarch`. Tested version: 10.2. Other versions will most likely work as well though
   If your distribution/platform does not have `gdb-multiarch` available `arm-none-eabi-gdb`
   will do the trick as well. Furthermore, some normal `gdb` binaries are built with multiarch
-  capabilities as well, you can find further information about this in the sub chapters.
+  capabilities as well, you can find further information about this in the sub chapters. -->
+
+<!-- TODO: ここあとで見直す -->
+  - `gdb-multiarch` バージョン10.2で動作確認済み。
+他のバージョンでも同様に正しく動作すると思います。
+お使いのOSディストリビューションやプラットフォームに対応した`gdb-multiarch`がない場合は、`arm-none-eabi-gdb`で代用が可能です。
+さらに、通常の`gdb`バイナリでもマルチプラットフォームに対応しているものがあります。
+これについて、サブチャプターにも詳しく記載します。
 
 - [`cargo-binutils`]. Version 0.3.3 or newer.
 
