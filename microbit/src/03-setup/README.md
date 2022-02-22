@@ -5,9 +5,9 @@
 <!--Dealing with microcontrollers involves several tools as we'll be dealing with an architecture
 different from your computer's and we'll have to run and debug programs on a "remote" device.-->
 
-マイクロコントローラを扱うためには、幾つかのツールを導入せねばなりません。
-なぜなら、あなたが使っているそのコンピュータとは異なったアーキテクチャを相手にすることになるからです。
-また、デバッグ用のプログラムを「リモート」の機器として実行する必要があるからです。
+マイクロコントローラを扱うためには、いくつかのツールを導入せねばなりません。
+なぜなら、あなたが今使っているそのコンピュータとは異なったアーキテクチャを相手にすることになるからです。
+また、プログラムの実行およびデバッグを、「リモート」の機器上でおこなう必要があるからです。
 
 <!--## Documentation-->
 
@@ -47,12 +47,11 @@ should work but we have listed the version we have tested. -->
   will do the trick as well. Furthermore, some normal `gdb` binaries are built with multiarch
   capabilities as well, you can find further information about this in the sub chapters. -->
 
-<!-- TODO: ここあとで見直す -->
   - `gdb-multiarch` バージョン10.2で動作確認済み。
 他のバージョンでも同様に正しく動作すると思います。
 お使いのOSディストリビューションやプラットフォームに対応した`gdb-multiarch`がない場合は、`arm-none-eabi-gdb`で代用が可能です。
-さらに、通常の`gdb`バイナリでもマルチプラットフォームに対応しているものがあります。
-これについて、サブチャプターにも詳しく記載します。
+さらに、通常の`gdb`バイナリでも、マルチアーキテクチャに対応しているものがあります。
+このことについては、サブチャプターにも詳しく記載しています。
 
 <!-- - [`cargo-binutils`]. Version 0.3.3 or newer.-->
 
@@ -68,7 +67,7 @@ should work but we have listed the version we have tested. -->
 
 <!-- - `minicom` on Linux and macOS. Tested version: 2.7.1. Other versions will most likely work as well though -->
 
-- LinuxとmacOSの場合：`minicom` バージョン2.7.1.で動作確認済みですが他のバージョンでも問題ないと思います。
+- LinuxとmacOSの場合：`minicom` バージョン2.7.1.で動作確認済みですが、他のバージョンでも同様に正しく動作すると思います。
 
 <!-- - `PuTTY` on Windows. -->
 
@@ -76,7 +75,7 @@ should work but we have listed the version we have tested. -->
 
 <!-- Next, follow OS-agnostic installation instructions for a few of the tools: -->
 
-続いて、お使いのOSに依存しない以下の手順に従って、いくつかのツールを導入してください。
+続いて、OSに共通である以下の手順に従って、いくつかのツールを導入してください。
 
 ### `rustc` & Cargo
 
@@ -119,7 +118,7 @@ git commit: crates.io
 
 <!-- ### This repository -->
 
-### 本リポジトリ
+### この本のリポジトリ
 
 <!-- Since this book also contains some small Rust code bases used in various chapters
 you will also have to download its source code. You can do this in one of the following ways:-->
@@ -130,16 +129,16 @@ you will also have to download its source code. You can do this in one of the fo
 <!-- * Visit the [repository](https://github.com/rust-embedded/discovery/), click the green "Code" button and then the
    "Download Zip" one -->
 
-* [リポジトリ](https://github.com/rust-embedded/discovery/)にアクセスし、緑色の「Code」ボタン、その後「Download Zip」ボタンを続けてクリックします。
+* [この本のリポジトリ](https://github.com/rust-embedded/discovery/)にアクセスし、緑色の「Code」ボタン、その後「Download Zip」ボタンを続けてクリックします。
 
 <!-- * Clone it using git (if you know git you presumably already have it installed) from the same repository as linked in
    the zip approach-->
 
-* 上記手順と同じリンク先のリポジトリから、gitでクローンします。（もしあなたがgitをご存じであれば、もうすでにインストール済みであることでしょう。）
+* 上記手順と同じリンク先のリポジトリから、gitでcloneします。（もしあなたがgitをご存じであれば、もうすでにインストール済みであることでしょう。）
 
 <!-- ### OS specific instructions -->
 
-### OSに依存する手順
+### OSごとの手順
 
 <!-- Now follow the instructions specific to the OS you are using: -->
 
