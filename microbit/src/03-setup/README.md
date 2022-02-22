@@ -54,27 +54,42 @@ should work but we have listed the version we have tested. -->
 さらに、通常の`gdb`バイナリでもマルチプラットフォームに対応しているものがあります。
 これについて、サブチャプターにも詳しく記載します。
 
-- [`cargo-binutils`]. Version 0.3.3 or newer.
+<!-- - [`cargo-binutils`]. Version 0.3.3 or newer.-->
+
+- [`cargo-binutils`]  バージョン0.3.3以上。
 
 [`cargo-binutils`]: https://github.com/rust-embedded/cargo-binutils
 
-- [`cargo-embed`]. Version 0.11.0 or newer.
+<!-- - [`cargo-embed`]. Version 0.11.0 or newer. -->
+
+- [`cargo-embed`] バージョン0.11.0以上。
 
 [`cargo-embed`]: https://github.com/probe-rs/cargo-embed
 
-- `minicom` on Linux and macOS. Tested version: 2.7.1. Other versions will most likely work as well though
+<!-- - `minicom` on Linux and macOS. Tested version: 2.7.1. Other versions will most likely work as well though -->
 
-- `PuTTY` on Windows.
+- LinuxとmacOSの場合：`minicom` バージョン2.7.1.で動作確認済みですが他のバージョンでも問題ないと思います。
 
-Next, follow OS-agnostic installation instructions for a few of the tools:
+<!-- - `PuTTY` on Windows. -->
+
+- Windowsの場合：`PuTTY`
+
+<!-- Next, follow OS-agnostic installation instructions for a few of the tools: -->
+
+続いて、お使いのOSに依存しない以下の手順に従って、いくつかのツールを導入してください。
 
 ### `rustc` & Cargo
 
-Install rustup by following the instructions at [https://rustup.rs](https://rustup.rs).
+<!-- Install rustup by following the instructions at [https://rustup.rs](https://rustup.rs). -->
 
-If you already have rustup installed double check that you are on the stable
+[https://rustup.rs](https://rustup.rs)に従って、rustupをインストールしてください。
+
+<!-- If you already have rustup installed double check that you are on the stable
 channel and your stable toolchain is up-to-date. `rustc -V` should return a date
-newer than the one shown below:
+newer than the one shown below:-->
+
+もしすでにrustupがインストール済みの場合でも、stableであることと、ツールチェーンが最新版であることを、念のため確認してください。
+`rustc -V`で得られる実行結果の日付が、以下に示すもの以降になるようにしてください。
 
 ``` console
 $ rustc -V
@@ -102,19 +117,33 @@ cargo-embed 0.11.0
 git commit: crates.io
 ```
 
-### This repository
+<!-- ### This repository -->
 
-Since this book also contains some small Rust code bases used in various chapters
-you will also have to download its source code. You can do this in one of the following ways:
+### 本リポジトリ
 
-* Visit the [repository](https://github.com/rust-embedded/discovery/), click the green "Code" button and then the
-   "Download Zip" one
-* Clone it using git (if you know git you presumably already have it installed) from the same repository as linked in
-   the zip approach
+<!-- Since this book also contains some small Rust code bases used in various chapters
+you will also have to download its source code. You can do this in one of the following ways:-->
 
-### OS specific instructions
+この本では、ちょっとしたRustのコードベースがいろいろなチャプターで使われています。
+このため、以下のいずれかの手順に従い、そのソースコードをダウンロードする必要があります。
 
-Now follow the instructions specific to the OS you are using:
+<!-- * Visit the [repository](https://github.com/rust-embedded/discovery/), click the green "Code" button and then the
+   "Download Zip" one -->
+
+* [リポジトリ](https://github.com/rust-embedded/discovery/)にアクセスし、緑色の「Code」ボタン、その後「Download Zip」ボタンを続けてクリックします。
+
+<!-- * Clone it using git (if you know git you presumably already have it installed) from the same repository as linked in
+   the zip approach-->
+
+* 上記手順と同じリンク先のリポジトリから、gitでクローンします。（もしあなたがgitをご存じであれば、もうすでにインストール済みであることでしょう。）
+
+<!-- ### OS specific instructions -->
+
+### OSに依存する手順
+
+<!-- Now follow the instructions specific to the OS you are using: -->
+
+続いて、お使いのOSに対応した手順に従ってください。
 
 - [Linux](linux.md)
 - [Windows](windows.md)
