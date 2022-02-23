@@ -130,6 +130,7 @@ you will also have to download its source code. You can do this in one of the fo
    "Download Zip" one -->
 
 * [この本のリポジトリ](https://github.com/rust-embedded/discovery/)にアクセスし、緑色の「Code」ボタン、その後「Download Zip」ボタンを続けてクリックします。
+> 訳注：この本の日本語版リポジトリは[こちら](https://github.com/tomoyuki-nakabayashi/discovery)です
 
 <!-- * Clone it using git (if you know git you presumably already have it installed) from the same repository as linked in
    the zip approach-->
