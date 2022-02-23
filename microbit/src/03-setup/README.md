@@ -35,7 +35,7 @@ microcontrollers.-->
 should work but we have listed the version we have tested. -->
 
 以下に挙げるツールすべてを使います。
-バージョンの最低要件を記載していないものに関しては、最新版であれば正常に動くはずです。
+最小バージョンを記載していないものに関しては、最近リリースされたバージョンであれば正常に動くはずです。
 ですがここでは、動作確認をしたバージョンを併せて記載しました。
 
 <!-- - Rust 1.53.0 or a newer toolchain.-->
